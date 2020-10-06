@@ -1,5 +1,5 @@
 {
-  "name": "dice",
+  "name": "DiceShards",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "parcel src/index.html",
     "deploy": "gh-pages -d build",
     "clean": "rm -rf dist package-lock.json node_modules .cache build",
-    "build": "parcel build src/index.html --public-url /dice -d build",
+    "build": "parcel build src/index.html --public-url /DiceShards -d build",
     "check": "eslint src/**/*.js",
     "fix": "eslint src/**/*.js --fix"
   },
@@ -23,6 +23,12 @@
   },
   "homepage": "https://github.com/AiranSchez/DiceShards#readme",
   "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4",
     "stylelint": "^13.7.2",
