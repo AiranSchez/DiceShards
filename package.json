@@ -1,10 +1,15 @@
 {
-  "name": "DiceShardProject",
+  "name": "dice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html",
+    "deploy": "gh-pages -d build",
+    "clean": "rm -rf dist package-lock.json node_modules .cache build",
+    "build": "parcel build src/index.html --public-url /dice -d build",
+    "check": "eslint src/**/*.js",
+    "fix": "eslint src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
