@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dice {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
